@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kiemtra = parseFloat(prompt("Nhap vao diem kiem tra "));
+    let giuaki = parseFloat(prompt("Nhap vao diem giua ki"));
+    let cuoiki = parseFloat(prompt("Nhap vao diem cuoi ki"));
+    let tb = (kiemtra + giuaki + cuoiki)/3;
+    if(tb<5){
+        document.write("Hoc sinh yeu");
+    } else if (5<tb&&tb<6.5){
+        document.write("Hoc sinh trung binh");
+    } else if (6.5<tb&&tb<8){
+        document.write("Hoc sinh kha");
+    } else if (8<=tb&&tb<10){
+        document.write("Hoc sinh gioi");
+    }
+</script>
+</body>
+</html>

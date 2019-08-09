@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doanhso = parseFloat(prompt("Nhap doanh so :  "));
+    let tienluong = parseFloat(prompt("Nhap tien luong:  "));
+    if (doanhso>=300) {
+        tienluong =(tienluong/100)*300;
+    }else if (200<=doanhso&&doanhso<300){
+        tienluong = (tienluong/100)*200;
+    }else if (130<=doanhso&&doanhso<200){
+        tienluong = (tienluong/100)*150;
+    }
+    document.write("Tien luong:  "+tienluong);
+</script>
+</body>
+</html>
